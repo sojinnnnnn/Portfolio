@@ -655,6 +655,11 @@ function validateName(){
 		return false;
 	}
 
+	if (name.lenght == [/1,2,3,4,5,6,7,8,9,0/]) {
+		nameError.innerHTML = 'alphabets only';
+		return false;
+	}
+
 	nameError.innerHTML = 'valid';
 	return true;
 }
