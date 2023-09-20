@@ -655,10 +655,11 @@ function validateName(){
 		return false;
 	}
 
-	if (name.lenght == (/0-9/)) {
-		nameError.innerHTML = 'alphabets only';
-		return false;
-	}
+if (!/^[A-Za-z]+$/.test(name)) {
+    nameError.innerHTML = 'Alphabets only';
+    return false;
+}
+
 
 	nameError.innerHTML = 'valid';
 	return true;
